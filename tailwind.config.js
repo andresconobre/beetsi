@@ -2,7 +2,17 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'yellow': {
+          'beetsi': '#F928'
+        }
+      }
+    },
+    fontFamily: {
+      'nunito': ['Nunito', 'sans-serif'],
+      'ubuntu': ['Ubuntu', 'sans-serif'],
+    }
   },
   plugins: [],
 }
