@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         'yellow': {
-          'beetsi': '#F928'
+          'beetsi': '#FFD700'
         }
       }
     },
