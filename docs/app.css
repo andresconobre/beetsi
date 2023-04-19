@@ -7,7 +7,7 @@
 }
 
 header {
-    @apply absolute w-full top-0 bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 z-[9999] /* border border-gray-100 */
+    @apply w-full top-0 bg-white rounded-b-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 z-[9999] fixed /* border border-gray-100 */
 }
 
 .header-button {
@@ -18,16 +18,16 @@ header nav>a:not(:last-child) {
     @apply inline-block relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-black after:origin-bottom-right after:duration-300 after:ease-out after:transition-transform hover:after:scale-x-100 hover:after:origin-bottom-left;
 }
 
-.logo {
-    @apply object-contain w-60;
-    -webkit-animation: tracking-in-expand-fwd-top 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-            animation: tracking-in-expand-fwd-top 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+.beetsi {
+    @apply text-black font-nunito font-bold text-9xl leading-none;
+        -webkit-animation: focus-in-expand 0.7s cubic-bezier(0.445, 0.050, 0.550, 0.950) both;
+                animation: focus-in-expand 0.7s cubic-bezier(0.445, 0.050, 0.550, 0.950) both;
 }
 
-.beetsi {
-    @apply text-black font-nunito font-bold text-9xl;
-        -webkit-animation: focus-in-expand 1.2s cubic-bezier(0.445, 0.050, 0.550, 0.950) both;
-                animation: focus-in-expand 1.2s cubic-bezier(0.445, 0.050, 0.550, 0.950) both;
+.subtitle {
+  @apply font-nunito text-black font-medium text-xl;
+  -webkit-animation: focus-in-expand 1.2s cubic-bezier(0.445, 0.050, 0.550, 0.950) both;
+          animation: focus-in-expand 1.2s cubic-bezier(0.445, 0.050, 0.550, 0.950) both;
 }
 
 /* ----------------------------------------------
@@ -65,39 +65,6 @@ header nav>a:not(:last-child) {
     100% {
       -webkit-filter: blur(0px);
               filter: blur(0px);
-      opacity: 1;
-    }
-  }
-
-  @-webkit-keyframes tracking-in-expand-fwd-top {
-    0% {
-      letter-spacing: -0.5em;
-      -webkit-transform: translateZ(-700px) translateY(-500px);
-              transform: translateZ(-700px) translateY(-500px);
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      -webkit-transform: translateZ(0) translateY(0);
-              transform: translateZ(0) translateY(0);
-      opacity: 1;
-    }
-  }
-  @keyframes tracking-in-expand-fwd-top {
-    0% {
-      letter-spacing: -0.5em;
-      -webkit-transform: translateZ(-700px) translateY(-500px);
-              transform: translateZ(-700px) translateY(-500px);
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      -webkit-transform: translateZ(0) translateY(0);
-              transform: translateZ(0) translateY(0);
       opacity: 1;
     }
   }
